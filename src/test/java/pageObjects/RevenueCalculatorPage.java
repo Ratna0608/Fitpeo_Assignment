@@ -72,8 +72,9 @@ public class RevenueCalculatorPage extends BasePage {
 	public void txtBoxAlongSlider(String txt_value) {
 		
 		act=new Actions(driver);
-		  act.click(txt_box).keyDown(Keys.CONTROL).sendKeys("A").keyDown(Keys.BACK_SPACE)
-		   .keyUp(Keys.CONTROL).keyDown(Keys.BACK_SPACE).perform();
+		  act.click(txt_box).keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL)
+		  .keyDown(Keys.BACK_SPACE)
+		   .keyUp(Keys.BACK_SPACE).perform();
 		        act.sendKeys(txt_value).perform();
 		   
 	
@@ -127,9 +128,11 @@ public class RevenueCalculatorPage extends BasePage {
 	
 	public void setSliderAt820() {
 		//act=new Actions(driver);
-		  act.click(txt_box).keyDown(Keys.CONTROL).sendKeys("A").keyDown(Keys.BACK_SPACE)
-		   .keyUp(Keys.CONTROL).keyDown(Keys.BACK_SPACE).perform();
-		        act.sendKeys("820").perform();
+		  act.click(txt_box).keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL)
+		  .keyDown(Keys.BACK_SPACE)
+		  .keyUp(Keys.BACK_SPACE)
+		  .perform();
+		   act.sendKeys("820").perform();
 		   
 
 	}
