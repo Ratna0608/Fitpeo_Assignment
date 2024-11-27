@@ -8,6 +8,16 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
+
+/*
+ * 
+ * This is Revenue Calculator Page
+ * In this I have Intialized Revenue calculator page related locator and methods(or)Actions
+ * 
+ *
+ * */
+
+
 public class RevenueCalculatorPage extends BasePage {
 	//js=(JavascriptExecutor)driver;
 
@@ -18,6 +28,7 @@ public class RevenueCalculatorPage extends BasePage {
 	
 	int TotalRecurringReimbursement;
 	
+	//Locators
 	
 	@FindBy(xpath="//*[text()='Medicare Eligible Patients']")
 	WebElement Scrolling;
@@ -43,6 +54,9 @@ public class RevenueCalculatorPage extends BasePage {
 	@FindBy(xpath="//div[@class='MuiBox-root css-m1khva']")
 	WebElement text_TotalReimbursement;
 
+	
+	//Actions
+	
 	public void ScrollinToView() {
 		//Scroll down the page until the revenue calculator slider is visible.
 

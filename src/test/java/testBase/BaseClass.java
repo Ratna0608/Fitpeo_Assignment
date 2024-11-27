@@ -7,7 +7,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+
+
+/*
+ * 
+ * This is Base Class Page which extends by TestFitpeoPage
+ * This class contains of Test methods of before and After Executing the @Test Methods
+ * In this methods We have setup the Chrome Browser
+ * Useful for reusability and Maintainability of the code
+ * 
+ * 
+ * */
 public class BaseClass {
+	
 	
 	public WebDriver driver;
 	@BeforeClass

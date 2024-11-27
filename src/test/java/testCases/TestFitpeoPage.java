@@ -6,6 +6,15 @@ import pageObjects.FitpeoHomePage;
 import pageObjects.RevenueCalculatorPage;
 import testBase.BaseClass;
 
+
+/*
+ * 
+ * This is a TestFitpeo Page
+ * in this class we will run the test cases using Testng Frame work;
+ * 
+ * */
+
+
 public class TestFitpeoPage extends BaseClass {
 	
 	@Test
